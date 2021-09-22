@@ -1,2 +1,7 @@
 # btc_hurst
-In this paper we study the time-varying long term dependence of bitcoin market based on the work of HE Hurst.
+In this paper we study the time-varying long term dependence of bitcoin market based on the work of HE Hurst. We use the R language to perform the statistical analysis on the dataset. The data set consists of bitcoin price and volume and is obtained from investing.com. We have considered daily close value for each day. 
+
+We take our time period from February 2011 to December 2018 which gives us 2862 data points that is approximately a 7 year time series of bitcoin prices. This should give us a idea about the trends and the efficiencies of the bitcoin network over the time. We use a rolling hurst instead of a static hurst exponent like in other papers because we have time varying system it is best to use a time varying hurst to model a time varying market thus we are using a 256 rolling window.
+We use a sliding window 256 points where we use rescaled range method of hurst to compute the hurst exponent.
+
+Our results suggest that bitcoin has had period inefficiency in the first period and has been efficient in the second period even considering the rapid rise and bust during 2018. The results show that bitcoin has become efficient in the recent times even during the recent boom and bust . The Hurst exponent although higher than other forex currencies is still very close thus suggesting that bitcoin might be lucrative currency for trading considering the high volatility and higher inefficiency than its forex counterparts. 
