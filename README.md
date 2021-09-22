@@ -1,4 +1,4 @@
-# btc_hurst
+# Time varying long term dependence of Bitcoin
 In this paper we study the time-varying long term dependence of bitcoin market based on the work of HE Hurst. We use the R language to perform the statistical analysis on the dataset. The data set consists of bitcoin price and volume and is obtained from investing.com. We have considered daily close value for each day. 
 
 We take our time period from February 2011 to December 2018 which gives us 2862 data points that is approximately a 7 year time series of bitcoin prices. This should give us a idea about the trends and the efficiencies of the bitcoin network over the time. We use a rolling hurst instead of a static hurst exponent like in other papers because we have time varying system it is best to use a time varying hurst to model a time varying market thus we are using a 256 rolling window.
